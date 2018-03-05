@@ -6,11 +6,10 @@ use PDO;
 
 //anciemment extended de Database
 ///anciement extended de Request
+// a extend de entity
 class UserModel extends Entity {
-    public $email;
+    /*public $email;
     public $password;
-    private $bdd;
-
     public function __construct(){
         //$request=Request::cleanRequest();
         try
@@ -33,6 +32,9 @@ class UserModel extends Entity {
         $this->password=$password;
     }
 
+    public function save(){
+        echo " save me";
+    }
 
     public function create($password, $email)
     {
@@ -86,7 +88,7 @@ class UserModel extends Entity {
        } catch (Exception $e) {
            die('Erreur : ' . $e->getMessage());
        }
-    }
+   }*/
 
 
 }
