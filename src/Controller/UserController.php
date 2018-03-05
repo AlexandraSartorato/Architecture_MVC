@@ -28,11 +28,17 @@ class UserController extends Controller
         $info=$user->get_info();
         $this->render('profil', array('info'=> $info));
 
-
         //a faire passer l id ici
-
     }
 
+    public function destroy(){
+
+        $user = new UserModel($this->params);
+        $user->deleted();
+        $this->render('status');
+
+        //a faire passer l id ici
+    }
     public function registerAction(){
 
         $user = new UserModel($this->params);

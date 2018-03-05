@@ -5,7 +5,7 @@
 content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
 <title>Pie PHP</title>
 </head>
 <body>
@@ -26,5 +26,7 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=
 </nav>
 <p>La view qui s'affiche</p>
 <?= $view ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
 </body>
 </html>

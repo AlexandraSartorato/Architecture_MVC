@@ -9,7 +9,7 @@ class TemplateEngine{
     }
 
     public function modify_content(){
-        $this->content=file_get_contents($file);
+        $this->content=file_get_contents($this->file);
 
 
     $arr2=[
@@ -44,7 +44,7 @@ class TemplateEngine{
 
     $final2=preg_replace($arr2, $replacement2, $this->content);
 
-    file_put_contents($file, $final2);
+    file_put_contents($this->file, $final2);
     }
 
 }

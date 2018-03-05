@@ -19,7 +19,13 @@ public function save(){
 public function get_info(){
     $tab=str_replace('Model','', $this->table);
     $tab2=strtolower(ltrim($tab, '\\'));
-    return $this->orm->read($tab2.'s', 252);
+    return $this->orm->read($tab2.'s', 251);
+}
+
+public function deleted(){
+    $tab=str_replace('Model','', $this->table);
+    $tab2=strtolower(ltrim($tab, '\\'));
+    $this->orm->delete($tab2.'s', 252);
 }
 
 }

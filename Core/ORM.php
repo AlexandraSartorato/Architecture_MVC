@@ -41,15 +41,19 @@ class ORM{
 
         }
 
-
-
-
         public function update ($table, $id, $fields) {
 
     }
         public function delete ($table, $id) {
-
+            try{
+                $reponse = $this->bdd->prepare("DELETE FROM $table WHERE id_perso=$id");
+                $reponse->execute();
+                var_dump($reponse);
+            } catch (Exception $e) {
+                die('Erreur : ' . $e->getMessage());
+            }
     }
+
         public function find ($table, $params = array( 'WHERE' => '1',
     'ORDER BY' => 'id ASC',
     'LIMIT' => ''
