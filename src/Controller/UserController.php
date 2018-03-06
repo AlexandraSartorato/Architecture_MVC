@@ -51,6 +51,10 @@ class UserController extends Controller
         $a->create($this->request->password, $this->request->email);*/
 
     }
+
+    public function updateAction(){
+        $this->render('update');
+    }
     public function login(){
         echo "ok";
     }

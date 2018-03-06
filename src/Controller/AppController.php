@@ -1,8 +1,8 @@
 <?php
-//namespace Controller;
+namespace Controller;
 use Core\Controller;
-class AppController{
+class AppController extends Controller{
     public function index(){
-        echo "bhh";
+        $this->render('index');
     }
 }

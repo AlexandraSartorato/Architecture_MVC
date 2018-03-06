@@ -10,3 +10,4 @@ Router::connect('/user/registerAction', ['controller' => 'UserController', 'acti
 Router::connect('/user/login', ['controller' => 'UserController', 'action' => 'login']);
 Router::connect('/user/profil', ['controller' =>'UserController', 'action'=>'profil']);
 Router::connect('/user/delete', ['controller' =>'UserController', 'action'=>'destroy']);
+Router::connect('/user/update', ['controller' =>'UserController', 'action'=>'updateAction']);

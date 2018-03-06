@@ -13,11 +13,9 @@
                 <p>Date de naissance: <?php echo htmlspecialchars($info[0]['date_naissance'])?></p>
             </div>
             <div class="card-action">
-                <a class="waves-effect waves-light btn modal-trigger" href="#">Modifier profil</a>
-                <a href="#!" class="btn" onclick="Materialize.showStaggeredList('#staggered-test')">Click Me</a>
+                <a class="waves-effect waves-light btn modal-trigger" href="http://localhost:8888/PiePHP/user/update">Modifier profil</a>
                 <a class="waves-effect waves-light btn modal-trigger" href="http://localhost:8888/PiePHP/user/delete">Supprimer profil</a>
             </div>
         </div>
     </div>
 </div>
-<div id="staggered-test">test</div>
