@@ -13,7 +13,7 @@ Class Controller{
         $this->params= get_object_vars($this->request);
     }
 
-protected function render($view, $scope) {
+protected function render($view, $scope=[]) {
         extract($scope);
         $f = implode(DIRECTORY_SEPARATOR, [dirname(__DIR__), 'src', 'View', str_replace('Controller', '', basename(get_class($this))), $view]) . '.php';
         $final = str_replace('\\', '', $f);

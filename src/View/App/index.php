@@ -1,9 +1,10 @@
 <div class="parallax-container">
     <div class="parallax"><img src="https://cdn1.thr.com/sites/default/files/imagecache/scale_crop_768_433/2017/06/fut_wot_keyart-h_2017.jpg"></div>
     <div class="center-align" style="padding-top: 400px;">
-        <a class="waves-effect waves-light btn" href="http://localhost:8888/PiePHP/user/register">Sign up</a>
+        <a class="waves-effect waves-light btn" href="./user/register">Sign up</a>
     </div>
 </div>
+
 <div class="section white">
     <div class="row container">
         <div class="col s4">

@@ -8,6 +8,7 @@ use PDO;
 ///anciement extended de Request
 // a extend de entity
 class UserModel extends Entity {
+    //ajouter une methode login et faire une methode register qui va verifier si il existe deja en db
     /*public $email;
     public $password;
     public function __construct(){

@@ -42,7 +42,7 @@ class ORM{
 
         public function read_all($table){
             try{
-                $reponse = $this->bdd->prepare("SELECT * FROM $table");
+                $reponse = $this->bdd->prepare("SELECT * FROM $table LIMIT 10");
                 $reponse->execute();
                 return $reponse->fetchAll(PDO::FETCH_ASSOC);
             } catch (Exception $e) {

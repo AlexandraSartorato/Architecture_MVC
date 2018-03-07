@@ -1,4 +1,4 @@
-<form class="form-signin" method="post" action="http://localhost:8888/PiePHP/user/registerAction">
+<form class="form-signin" method="post" action="./PiePHP/user/registerAction">
    <h2 class="form-signin-heading">Subscribe</h2>
     <div class="input-group">
         <input type="text" id="first_name"  placeholder="Firstname" name ="prenom">
