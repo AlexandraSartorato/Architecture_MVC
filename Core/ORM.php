@@ -38,7 +38,16 @@ class ORM{
         } catch (Exception $e) {
                 die('Erreur : ' . $e->getMessage());
             }
+        }
 
+        public function read_all($table){
+            try{
+                $reponse = $this->bdd->prepare("SELECT * FROM $table");
+                $reponse->execute();
+                return $reponse->fetchAll(PDO::FETCH_ASSOC);
+            } catch (Exception $e) {
+                die('Erreur : ' . $e->getMessage());
+            }
         }
 
         public function update ($table, $id, $fields) {
