@@ -1,9 +1,11 @@
 <?php
 namespace Core;
+use \Core\Database;
+
 use PDO;
 
 class ORM{
-    public function __construct(){
+   public function __construct(){
         try
         {
            $this->bdd = new PDO('mysql:host=localhost:8889;dbname=epitech_tp;charset=utf8', 'root', 'root');
@@ -24,7 +26,9 @@ class ORM{
         $values = implode("' , '", $value_list);
 
         $reponse = $this->bdd->prepare("INSERT INTO $table (`$request`) VALUES ('$values')");
+        var_dump($reponse);
         $reponse->execute();
+        return $this->bdd->lastInsertId();
     }   catch (Exception $e) {
         die('Erreur : ' . $e->getMessage());
     }
@@ -32,7 +36,8 @@ class ORM{
 
         public function read ($table, $id) {
         try{
-            $reponse = $this->bdd->prepare("SELECT * FROM $table WHERE id_perso=$id");
+            $tab=$table.'s';
+            $reponse = $this->bdd->prepare("SELECT * FROM $tab WHERE id_$table=$id");
             $reponse->execute();
             return $reponse->fetchAll(PDO::FETCH_ASSOC);
         } catch (Exception $e) {
@@ -51,11 +56,23 @@ class ORM{
         }
 
         public function update ($table, $id, $fields) {
+            try {
+                //stocker les cles
+                $all_keys=array_keys ($fields);
+                //stocker les valeurs
+                $value_list = array_values ($fields);
 
+                for($i=0; $i < count($all_keys); $i ++) {
+                    $reponse = $this->bdd->prepare("UPDATE $table SET $all_keys[$i]='$value_list[$i]' WHERE id_user=$id");
+                    $reponse->execute();
+                }
+            }   catch (Exception $e) {
+                die('Erreur : ' . $e->getMessage());
+            }
     }
         public function delete ($table, $id) {
             try{
-                $reponse = $this->bdd->prepare("DELETE FROM $table WHERE id_perso=$id");
+                $reponse = $this->bdd->prepare("DELETE FROM $table WHERE id_user=$id");
                 $reponse->execute();
                 var_dump($reponse);
             } catch (Exception $e) {

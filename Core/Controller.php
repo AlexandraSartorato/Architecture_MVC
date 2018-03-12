@@ -9,6 +9,7 @@ Class Controller{
 
     public function __construct()
     {
+        unset($_COOKIE['PHPSESSID']);
         $this->request=new Request();
         $this->params= get_object_vars($this->request);
     }

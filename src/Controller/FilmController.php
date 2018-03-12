@@ -17,4 +17,17 @@ class FilmController extends Controller{
 
     }
 
+    public function add(){
+        $this->render('add');
+    }
+
+    public function addAction(){
+        $film= new FilmModel($this->params);
+        $film->save();
+    }
+    public function detail(){
+        $film=new FilmModel($this->params);
+        $details=$film->get_info($_GET['id']);
+        $this->render('details', array('details'=>$details));
+    }
 }

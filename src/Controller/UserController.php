@@ -23,10 +23,10 @@ class UserController extends Controller
     }
 
     public function profil(){
-
         $user = new UserModel($this->params);
-        $info=$user->get_info();
+        $info=$user->get_info($_SESSION['id']);
         $this->render('profil', array('info'=> $info));
+        var_dump($_SESSION['id']);
 
         //a faire passer l id ici
     }
@@ -34,27 +34,30 @@ class UserController extends Controller
     public function destroy(){
 
         $user = new UserModel($this->params);
-        $user->deleted();
+        $user->deleted($_SESSION['id']);
         $this->render('status');
-
         //a faire passer l id ici
     }
     public function registerAction(){
-
         $user = new UserModel($this->params);
-        $user->save();
-        //var_dump($user);
-        //if (!$user->id) {
-        //self::$_render = "Votre compte a été créé." . PHP_EOL;
-    //}
+        $this->id=$user->save();
+        $_SESSION["id"]=$this->id;
         /*$a = new UserModel();
         $a->create($this->request->password, $this->request->email);*/
 
     }
 
-    public function updateAction(){
-        $this->render('update');
+    public function update(){
+        $user = new UserModel($this->params);
+        $info=$user->get_info($_SESSION['id']);
+        $this->render('update', array('info'=> $info));
     }
+
+    public function updateAction(){
+        $user = new UserModel($this->params);
+        $user->update_info($_SESSION['id']);
+    }
+
     public function login(){
         echo "ok";
     }

@@ -13,8 +13,8 @@
 </head>
 <body>
 <nav>
-    <div class="nav-wrapper light-blue darken-4">
-        <a href="#!" class="brand-logo">My cinema</a>
+    <div class="nav-wrapper red lighten-1">
+        <a href="#!" class="brand-logo">Mycinem@</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="sass.html">Movies</a></li>
@@ -40,7 +40,7 @@
 </nav>
 <?= $view ?>
 </body>
-<footer class="page-footer light-blue darken-4">
+<footer class="page-footer red lighten-1">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
@@ -60,9 +60,9 @@
     <div class="footer-copyright">
         <div class="container">
             © 2017 alexandra.sartorato@epitech.eu
-            <a class="grey-text text-lighten-4 right" href="#!"><i class="fab fa-facebook-square fa-2x"></i></a>
-            <a class="grey-text text-lighten-4 right" href="#!"><i class="fab fa-instagram fa-2x"></i></a>
-            <a class="grey-text text-lighten-4 right" href="#!"><i class="fab fa-twitter-square fa-2x"></i></a>
+            <a class="grey-text text-lighten-4 right" href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a class="grey-text text-lighten-4 right" href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x"></i></a>
+            <a class="grey-text text-lighten-4 right" href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a>
         </div>
     </div>
 </footer>

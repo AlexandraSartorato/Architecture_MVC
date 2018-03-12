@@ -13,13 +13,13 @@ class Entity{
     public function save(){
     $tab=str_replace('Model','', $this->table);
     $tab2=strtolower(ltrim($tab, '\\'));
-    $this->orm->create($tab2.'s',$this->params);
+    return $this->orm->create($tab2.'s',$this->params);
 }
 
-    public function get_info(){
+    public function get_info($id){
     $tab=str_replace('Model','', $this->table);
     $tab2=strtolower(ltrim($tab, '\\'));
-    return $this->orm->read($tab2.'s', 251);
+    return $this->orm->read($tab2, $id);
 }
 
     public function get_all_info(){
@@ -27,11 +27,16 @@ class Entity{
     $tab2=strtolower(ltrim($tab, '\\'));
     return $this->orm->read_all($tab2.'s');
 }
+    public function update_info($id){
+        $tab=str_replace('Model','', $this->table);
+        $tab2=strtolower(ltrim($tab, '\\'));
+       return $this->orm->update($tab2.'s',$id, $this->params);
+    }
 
-    public function deleted(){
+    public function deleted($id){
     $tab=str_replace('Model','', $this->table);
     $tab2=strtolower(ltrim($tab, '\\'));
-    $this->orm->delete($tab2.'s', 252);
+    $this->orm->delete($tab2.'s',$id);
 }
 
 }
