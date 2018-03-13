@@ -30,4 +30,14 @@ class FilmController extends Controller{
         $details=$film->get_info($_GET['id']);
         $this->render('details', array('details'=>$details));
     }
+
+    public function update(){
+        $film = new FilmModel($this->params);
+        $details=$film->get_info($_GET['id']);
+        $this->render('update', array('details'=>$details));
+    }
+    public function updateAction(){
+        $film= new FilmModel($this->params);
+        $film->update_info($_GET['id']);
+    }
 }

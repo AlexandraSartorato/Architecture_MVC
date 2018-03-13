@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="http://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <title>Pie PHP</title>
@@ -18,8 +20,15 @@
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="sass.html">Movies</a></li>
-            <li><a href="badges.html">History</a></li>
-            <li><a class="waves-effect waves-light btn">Sign in</a></li>
+            <li><a href="badges.html">Watched list</a></li>
+            <li><a class="waves-effect waves-light btn">Login</a></li>
+            <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Menu</a>
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">User profil</a></li>
+                <li><a href="#!"><i class="fas fa-history"></i>Watched list</a></li>
+                <li class="divider"></li>
+                <li><a href="#!"><i class= "fas fa-sign-out-alt"></i>Log out</a></li>
+            </ul>
         </ul>
         <ul class="side-nav" id="mobile-demo">
             <li><a href="sass.html">Movies</a></li>

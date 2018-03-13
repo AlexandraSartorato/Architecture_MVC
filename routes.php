@@ -16,3 +16,6 @@ Router::connect('/movies/display', ['controller' =>'FilmController', 'action'=>'
 Router::connect('/movies/add', ['controller' =>'FilmController', 'action'=>'add']);
 Router::connect('/movies/addAction', ['controller' =>'FilmController', 'action'=>'addAction']);
 Router::connect('/movies/details', ['controller' =>'FilmController', 'action'=>'detail']);
+Router::connect('/movies/update', ['controller' =>'FilmController', 'action'=>'update']);
+Router::connect('/movies/updateAction', ['controller' =>'FilmController', 'action'=>'updateAction']);
+Router::connect('/movies/watched', ['controller' =>'TimelineController', 'action'=>'watched']);

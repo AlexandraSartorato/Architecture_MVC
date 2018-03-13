@@ -30,7 +30,7 @@ class Entity{
     public function update_info($id){
         $tab=str_replace('Model','', $this->table);
         $tab2=strtolower(ltrim($tab, '\\'));
-       return $this->orm->update($tab2.'s',$id, $this->params);
+       return $this->orm->update($tab2,$id, $this->params);
     }
 
     public function deleted($id){

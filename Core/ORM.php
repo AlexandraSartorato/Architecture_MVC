@@ -61,9 +61,9 @@ class ORM{
                 $all_keys=array_keys ($fields);
                 //stocker les valeurs
                 $value_list = array_values ($fields);
-
+                $tab = $table.'s';
                 for($i=0; $i < count($all_keys); $i ++) {
-                    $reponse = $this->bdd->prepare("UPDATE $table SET $all_keys[$i]='$value_list[$i]' WHERE id_user=$id");
+                    $reponse = $this->bdd->prepare("UPDATE $tab SET $all_keys[$i]='$value_list[$i]' WHERE id_$table=$id");
                     $reponse->execute();
                 }
             }   catch (Exception $e) {

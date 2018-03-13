@@ -13,12 +13,21 @@
     <li>Duration: <?php echo htmlspecialchars($value['duree_min']);?> minutes</li>
     <li id="rate"></li>
     <li id="vote"></li>
-        <li><a class="waves-effect waves-light btn">Modify information</a></li>
+        <li><a class="waves-effect waves-light btn" href="./update?id=<?php echo htmlspecialchars($value['id_film']); ?>" >Modify information</a></li>
 <?php endforeach;?>
     </ul>
         </div>
     <div id="result">
     </div>
+    </div>
+</div>
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
 </div>
 <script>
