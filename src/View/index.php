@@ -9,6 +9,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/PiePHP/webroot/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <title>Pie PHP</title>
@@ -19,20 +20,20 @@
         <a href="#!" class="brand-logo">Mycinem@</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Movies</a></li>
-            <li><a href="badges.html">Watched list</a></li>
-            <li><a class="waves-effect waves-light btn">Login</a></li>
+            <li><a href="/PiePHP/movies/display">Movies</a></li>
+            <li><a href="/PiePHP/movies/watched">Watched list</a></li>
+            <li><a class="waves-effect waves-light btn" href="/PiePHP/user/login">Login</a></li>
             <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Menu</a>
             <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">User profil</a></li>
-                <li><a href="#!"><i class="fas fa-history"></i>Watched list</a></li>
+                <li><a href="/PiePHP/user/profil">User profil</a></li>
+                <li><a href="/PiePHP/movies/watched"><i class="fas fa-history"></i>Watched list</a></li>
                 <li class="divider"></li>
                 <li><a href="#!"><i class= "fas fa-sign-out-alt"></i>Log out</a></li>
             </ul>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-            <li><a href="sass.html">Movies</a></li>
-            <li><a href="badges.html">History</a></li>
+            <li><a href="http://localhost:8888/PiePHP/movies/display">Movies</a></li>
+            <li><a href="http://localhost:8888/PiePHP/user/login">History</a></li>
         </ul>
     </div>
 </nav>
@@ -69,9 +70,9 @@
     <div class="footer-copyright">
         <div class="container">
             © 2017 alexandra.sartorato@epitech.eu
-            <a class="grey-text text-lighten-4 right" href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a>
-            <a class="grey-text text-lighten-4 right" href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x"></i></a>
-            <a class="grey-text text-lighten-4 right" href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a>
+            <a class="grey-text text-lighten-4 right" id="logo-facebook"href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a class="grey-text text-lighten-4 right" id="logo-instagram" href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x"></i></a>
+            <a class="grey-text text-lighten-4 right" id="logo-twitter" href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a>
         </div>
     </div>
 </footer>

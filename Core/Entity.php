@@ -36,7 +36,7 @@ class Entity{
     public function deleted($id){
     $tab=str_replace('Model','', $this->table);
     $tab2=strtolower(ltrim($tab, '\\'));
-    $this->orm->delete($tab2.'s',$id);
+    $this->orm->delete($tab2,$id);
 }
 
 }

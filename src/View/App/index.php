@@ -38,7 +38,7 @@
             .done(function( data ) {
                 console.log(data);
                 $.each( data.results, function( i, results ) {
-                    $( "<img>" ).attr( "src", 'https://image.tmdb.org/t/p/w200/'+ results.poster_path).appendTo( "#popular" );
+                    $( "<img>" ).attr( "src", 'https://image.tmdb.org/t/p/w200/'+ results.poster_path).appendTo( "#popular" ).addClass('pictures');
 
                     if ( i === 3 ) {
                         return false;

@@ -1,7 +1,6 @@
 <div class="container">
 <div class="row">
     <div class="col s5">
-        <?php var_dump($_REQUEST); ?>
 <form class="form-signin" method="post" action="./updateAction?id=<?php echo htmlspecialchars($details[0]['id_film']);?>">
     <h2 class="form-signin-heading">Update the database</h2>
     <div class="input-group">

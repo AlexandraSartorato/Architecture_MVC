@@ -3,11 +3,12 @@
 <div class="container">
     <div class="row">
         <div class="col l6">
-    <ul>
-<?php foreach ($details as $item=>$value):?>
+        <ul>
+    <?php foreach ($details as $item=>$value):?>
     <li><h5><?php echo htmlspecialchars($value['titre']);?></h5></li>
     <li id="original_title"></li>
     <li><h5><?php echo htmlspecialchars($value['annee_prod']);?></h5></li>
+        <li class="cyan-text lighten-3"><h6><?php echo htmlspecialchars($genre_details[0]['nom']);?></h6></li>
     <input type="hidden" value="<?php echo htmlspecialchars($value['titre']);?>" id="title">
     <li><?php echo htmlspecialchars($value['resum']);?></li>
     <li>Duration: <?php echo htmlspecialchars($value['duree_min']);?> minutes</li>

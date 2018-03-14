@@ -18,4 +18,10 @@ Router::connect('/movies/addAction', ['controller' =>'FilmController', 'action'=
 Router::connect('/movies/details', ['controller' =>'FilmController', 'action'=>'detail']);
 Router::connect('/movies/update', ['controller' =>'FilmController', 'action'=>'update']);
 Router::connect('/movies/updateAction', ['controller' =>'FilmController', 'action'=>'updateAction']);
+Router::connect('/movies/delete', ['controller' =>'FilmController', 'action'=>'destroy']);
 Router::connect('/movies/watched', ['controller' =>'TimelineController', 'action'=>'watched']);
+Router::connect('/genre/display', ['controller' =>'GenreController', 'action'=>'display']);
+Router::connect('/genre/add', ['controller' =>'GenreController', 'action'=>'addAction']);
+Router::connect('/genre/update', ['controller' =>'GenreController', 'action'=>'update']);
+Router::connect('/genre/updateAction', ['controller' =>'GenreController', 'action'=>'updateAction']);
+Router::connect('/genre/delete', ['controller' =>'GenreController', 'action'=>'destroy']);

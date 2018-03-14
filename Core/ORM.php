@@ -47,7 +47,7 @@ class ORM{
 
         public function read_all($table){
             try{
-                $reponse = $this->bdd->prepare("SELECT * FROM $table LIMIT 10");
+                $reponse = $this->bdd->prepare("SELECT * FROM $table LIMIT 30");
                 $reponse->execute();
                 return $reponse->fetchAll(PDO::FETCH_ASSOC);
             } catch (Exception $e) {
@@ -72,7 +72,8 @@ class ORM{
     }
         public function delete ($table, $id) {
             try{
-                $reponse = $this->bdd->prepare("DELETE FROM $table WHERE id_user=$id");
+                $tab=$table.'s';
+                $reponse = $this->bdd->prepare("DELETE FROM $tab WHERE id_$table=$id");
                 $reponse->execute();
                 var_dump($reponse);
             } catch (Exception $e) {
