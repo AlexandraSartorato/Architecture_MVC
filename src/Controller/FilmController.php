@@ -18,7 +18,9 @@ class FilmController extends Controller{
     }
 
     public function add(){
-        $this->render('add');
+        $genre= new GenreModel($this->params);
+        $genre_list=$genre->get_all_info();
+        $this->render('add', array('genre_list'=>$genre_list));
     }
 
     public function addAction(){

@@ -2,7 +2,7 @@
 namespace Core;
 use \Core\ORM;
 //extends à ORM obligatoire
-class Entity{
+class Entity {
 
     public function __construct($params){
         $this->orm= new ORM();

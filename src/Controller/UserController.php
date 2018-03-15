@@ -26,7 +26,6 @@ class UserController extends Controller
         $user = new UserModel($this->params);
         $info=$user->get_info($_SESSION['id']);
         $this->render('profil', array('info'=> $info));
-        var_dump($_SESSION['id']);
 
         //a faire passer l id ici
     }
@@ -40,7 +39,7 @@ class UserController extends Controller
     }
     public function registerAction(){
         $user = new UserModel($this->params);
-        $this->id=$user->save();
+        $this->id=$user->insert_user();
         $_SESSION["id"]=$this->id;
         /*$a = new UserModel();
         $a->create($this->request->password, $this->request->email);*/
@@ -61,4 +60,23 @@ class UserController extends Controller
     public function login(){
         $this->render('login');
     }
+    public function logAction(){
+        $user=new UserModel($this->params);
+        $id=$user->log();
+        if($id==false){
+            $this->render('index');
+        }else{
+            $_SESSION['id']=$id;
+            $info=$user->get_info($_SESSION['id']);
+            $this->render('profil', array('info'=>$info));
+
+        }
+    }
+
+    public function logout(){
+        session_destroy();
+        $this->render('index');
+        exit;
+    }
+
 }

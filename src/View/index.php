@@ -28,7 +28,7 @@
                 <li><a href="/PiePHP/user/profil">User profil</a></li>
                 <li><a href="/PiePHP/movies/watched"><i class="fas fa-history"></i>Watched list</a></li>
                 <li class="divider"></li>
-                <li><a href="#!"><i class= "fas fa-sign-out-alt"></i>Log out</a></li>
+                <li><a href="/PiePHP/user/logout"><i class= "fas fa-sign-out-alt"></i>Log out</a></li>
             </ul>
         </ul>
         <ul class="side-nav" id="mobile-demo">

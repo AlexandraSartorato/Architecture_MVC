@@ -24,10 +24,11 @@ class ORM{
         //stocker les valeurs
         $value_list = array_values ($fields);
         $values = implode("' , '", $value_list);
+        //$this->setMdp(hash_hmac('ripemd160',$mdp,'si tu aimes la wac tape dans tes mains'));
 
         $reponse = $this->bdd->prepare("INSERT INTO $table (`$request`) VALUES ('$values')");
         var_dump($reponse);
-        $reponse->execute();
+        var_dump($reponse->execute());
         return $this->bdd->lastInsertId();
     }   catch (Exception $e) {
         die('Erreur : ' . $e->getMessage());

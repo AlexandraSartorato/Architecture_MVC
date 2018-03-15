@@ -9,9 +9,6 @@
         <label for="Email"></label><input type="text" class="form-control" name="email" placeholder="<?php echo $info[0]['email']; ?>" id="email" required="" autofocus="" />
     </div>
     <br>
-    <div class="input-group">
-        <label for="Password"></label><input type="password" class="form-control" id="password" name="mot_de_passe" placeholder="******" required=""/>
-    </div>
-    <button class="btn waves-effect waves-light" type="submit">Sign up<i class="material-icons right"></i>
+    <button class="btn waves-effect waves-light" type="submit">Modify<i class="material-icons right"></i>
     </button>
 </form>

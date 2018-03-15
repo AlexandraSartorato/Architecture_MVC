@@ -1,5 +1,5 @@
 <div class="container">
-    <a class="align-right" href="#"><i class="fas fa-plus-square"></i></a>
+    <a class="align-right" href="./watched/add"><i class="fas fa-plus-square"></i></a>
     <h5>Your Watched list</h5>
 <table class="striped">
     <thead>
