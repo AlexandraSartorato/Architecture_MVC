@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c267e288-5d1d-42b3-a4d4-6b1e01d9ae60" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/Film/search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes.php" afterPath="$PROJECT_DIR$/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/FilmController.php" afterPath="$PROJECT_DIR$/src/Controller/FilmController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/GenreController.php" afterPath="$PROJECT_DIR$/src/Controller/GenreController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/TimelineController.php" afterPath="$PROJECT_DIR$/src/Controller/TimelineController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/FilmModel.php" afterPath="$PROJECT_DIR$/src/Model/FilmModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Film/add.php" afterPath="$PROJECT_DIR$/src/View/Film/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Film/update.php" afterPath="$PROJECT_DIR$/src/View/Film/update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Timeline/watched.php" afterPath="$PROJECT_DIR$/src/View/Timeline/watched.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/index.php" afterPath="$PROJECT_DIR$/src/View/index.php" />
-    </list>
+    <list default="true" id="c267e288-5d1d-42b3-a4d4-6b1e01d9ae60" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -595,12 +582,12 @@
       <updated>1519036681072</updated>
       <workItem from="1519036682261" duration="273000" />
       <workItem from="1520241604358" duration="89971000" />
-      <workItem from="1520881458646" duration="65687000" />
+      <workItem from="1520881458646" duration="65941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155931000" />
+    <option name="totallyTimeSpent" value="156185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
