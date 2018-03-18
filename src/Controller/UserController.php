@@ -11,50 +11,55 @@ class UserController extends Controller
     public $id;
     public $info;
 
-    public function add(){
-        echo "okkk";
-    }
-    public function show(){
-        $this->render('show');
-    }
-
     public function register(){
         $this->render('register');
     }
 
     public function profil(){
         $user = new UserModel($this->params);
-        $info=$user->get_info($_SESSION['id']);
-        $this->render('profil', array('info'=> $info));
-
-        //a faire passer l id ici
+        if(!empty($_SESSION['id'])) {
+            $info = $user->get_info($_SESSION['id']);
+            $this->render('profil', array('info' => $info));
+        }else{
+            $this->render('profil');
+        }
     }
 
-    public function destroy(){
+    public function destroy()
+    {
 
         $user = new UserModel($this->params);
+        if (isset($_SESSION['id'])) {
         $user->deleted($_SESSION['id']);
+    }
         $this->render('status');
-        //a faire passer l id ici
     }
     public function registerAction(){
         $user = new UserModel($this->params);
         $this->id=$user->insert_user();
         $_SESSION["id"]=$this->id;
-        /*$a = new UserModel();
-        $a->create($this->request->password, $this->request->email);*/
-
+        if(isset($_SESSION['id'])){
+            echo "ok";
+        }
     }
 
     public function update(){
         $user = new UserModel($this->params);
-        $info=$user->get_info($_SESSION['id']);
-        $this->render('update', array('info'=> $info));
+        if(!empty($_SESSION['id'])) {
+            $info = $user->get_info($_SESSION['id']);
+            $this->render('update', array('info' => $info));
+        }else{
+            $this->render('update');
+
+        }
     }
 
     public function updateAction(){
         $user = new UserModel($this->params);
-        $user->update_info($_SESSION['id']);
+        if(isset($_SESSION['id'])) {
+            $user->update_info($_SESSION['id']);
+            echo "ok";
+        }
     }
 
     public function login(){
@@ -64,11 +69,10 @@ class UserController extends Controller
         $user=new UserModel($this->params);
         $id=$user->log();
         if($id==false){
-            $this->render('index');
+           // $this->render('index');
         }else{
             $_SESSION['id']=$id;
-            $info=$user->get_info($_SESSION['id']);
-            $this->render('profil', array('info'=>$info));
+            echo "ok";
 
         }
     }

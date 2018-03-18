@@ -12,10 +12,6 @@
     <input type="date" class="datepicker" name="date">
     <input type="hidden" value="<?php echo $_SESSION['id'];?>" name="id_timeline">
         <span class="input-group-addon"><i class="fa fa-user-o fa-fw" aria-hidden="true"></i></span>
-    <div class="input-field col s12">
-        <textarea id="textarea1" name="avis" class="materialize-textarea"></textarea>
-        <label for="textarea1">Review</label>
-    </div>
     <button class="btn waves-effect waves-light" type="submit">Add movie<i class="material-icons right"></i>
     </button>
 </form>

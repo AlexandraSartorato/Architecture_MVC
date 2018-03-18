@@ -15,8 +15,7 @@
         <span class="input-group-addon"><i class="fa fa-user-o fa-fw" aria-hidden="true"></i></span>
     </div>
     <br>
-    <button class="btn waves-effect waves-light" type="submit">Update<i class="material-icons right"></i>
-    </button>
+    <button class="btn waves-effect waves-light" type="submit">Update<i class="material-icons right"></i></button>
     </div>
 </div>
 </div>

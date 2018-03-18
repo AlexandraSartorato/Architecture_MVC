@@ -25,7 +25,6 @@
     </div>
 </div>
 <div class="row">
-
     <div class="container" id="popular">
         <h4>Upcomming Movies</h4>
     </div>

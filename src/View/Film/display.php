@@ -17,7 +17,7 @@
                                     <input type="hidden" value="<?php echo htmlspecialchars($value['titre']);?>" id="title">
                                     <td><i class="fas fa-info-circle"></i><a href="./details?id=<?php echo htmlspecialchars($value['id_film']);?>">More info</a></td>
                                     <td><a href="./delete?id=<?php echo htmlspecialchars($value['id_film']);?>"><i class="fas fa-trash-alt"></i></a></td>
-                            </tr>
+                                </tr>
                         <?php endforeach;?>
                     </tbody>
                 </table>
@@ -25,16 +25,9 @@
         <div class="col s6">
         </div>
     <div class="col s6" id="records">
+        <h3>Top 5 popular movies</h3>
     </div>
-    <ul class="pagination">
-        <li class="disabled"><a href="#!"><i class="fas fa-chevron-circle-left"></i></a></li>
-        <li class="active"><a href="#!">1</a></li>
-        <li class="waves-effect"><a href="#!">2</a></li>
-        <li class="waves-effect"><a href="#!">3</a></li>
-        <li class="waves-effect"><a href="#!">4</a></li>
-        <li class="waves-effect"><a href="#!">5</a></li>
-        <li class="waves-effect"><a href="#!"><i class="fas fa-chevron-circle-right"></i></a></li>
-    </ul>
+    </div>
 <script>
     (function() {
         var API = "https://api.themoviedb.org/3/movie/popular?api_key=d25dcd0e636e9e64c47928af530beffb";

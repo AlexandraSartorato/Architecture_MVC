@@ -3,32 +3,23 @@
 <div class="container">
     <div class="row">
         <div class="col l6">
-        <ul>
-    <?php foreach ($details as $item=>$value):?>
-    <li><h5><?php echo htmlspecialchars($value['titre']);?></h5></li>
-    <li id="original_title"></li>
-    <li><h5><?php echo htmlspecialchars($value['annee_prod']);?></h5></li>
-        <li class="cyan-text lighten-3"><h6><?php echo htmlspecialchars($genre_details[0]['nom']);?></h6></li>
-    <input type="hidden" value="<?php echo htmlspecialchars($value['titre']);?>" id="title">
-    <li><?php echo htmlspecialchars($value['resum']);?></li>
-    <li>Duration: <?php echo htmlspecialchars($value['duree_min']);?> minutes</li>
-    <li id="rate"></li>
-    <li id="vote"></li>
-        <li><a class="waves-effect waves-light btn" href="./update?id=<?php echo htmlspecialchars($value['id_film']); ?>" >Modify information</a></li>
-<?php endforeach;?>
-    </ul>
+            <ul>
+                <?php foreach ($details as $item=>$value):?>
+                <li><h5><?php echo htmlspecialchars($value['titre']);?></h5></li>
+                <li id="original_title"></li>
+                <li><h5><?php echo htmlspecialchars($value['annee_prod']);?></h5></li>
+                <li class="cyan-text lighten-3"><h6><?php echo htmlspecialchars($genre_details[0]['nom']);?></h6></li>
+                    <input type="hidden" value="<?php echo htmlspecialchars($value['titre']);?>" id="title">
+                <li><?php echo htmlspecialchars($value['resum']);?></li>
+                <li>Duration: <?php echo htmlspecialchars($value['duree_min']);?> minutes</li>
+                <li id="rate"></li>
+                <li id="vote"></li>
+                <li><a class="waves-effect waves-light btn" href="./update?id=<?php echo htmlspecialchars($value['id_film']); ?>" >Modify information</a></li>
+        <?php endforeach;?>
+        </ul>
         </div>
-    <div id="result">
-    </div>
-    </div>
-</div>
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        <div id="result">
+        </div>
     </div>
 </div>
 <script>

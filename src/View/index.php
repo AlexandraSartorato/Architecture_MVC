@@ -17,7 +17,7 @@
 <body>
 <nav>
     <div class="nav-wrapper red lighten-1">
-        <a href="#!" class="brand-logo">Mycinem@</a>
+        <a href="/PiePHP/" class="brand-logo">Mycinem@</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="/PiePHP/movies/display">Movies</a></li>
@@ -32,8 +32,8 @@
             </ul>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-            <li><a href="http://localhost:8888/PiePHP/movies/display">Movies</a></li>
-            <li><a href="http://localhost:8888/PiePHP/user/login">History</a></li>
+            <li><a href="/PiePHP/movies/display">Movies</a></li>
+            <li><a href="/PiePHP/user/login">History</a></li>
         </ul>
     </div>
 </nav>

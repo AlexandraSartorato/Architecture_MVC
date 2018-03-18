@@ -1,5 +1,5 @@
 <h5 class="indigo-text">Add a new genre</h5>
-<form class="col s6" method="post" action="./updateAction?id=<?php echo $details[0]['id_genre']; ?>">
+<form class="col s6" method="post" action="./updateAction?id=<?php echo $details[0]['id_genre'];?>">
     <div class='row'>
         <div class='col s12'>
         </div>

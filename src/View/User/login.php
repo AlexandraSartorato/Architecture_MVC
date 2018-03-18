@@ -31,13 +31,12 @@
 <div class="section"></div>
 <main>
     <center>
-        <img class="responsive-img" style="width: 250px;" src="https://i.imgur.com/ax0NCsK.gif" />
         <div class="section"></div>
-        <h5 class="indigo-text">Please, login into your account</h5>
+        <h5 class="blue-text">Please, login into your account</h5>
         <div class="section"></div>
         <div class="container">
             <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
-                <form class="col s12" method="post" action="/PiePHP/user/logAction">
+                <form class="col s12" enctype="multipart/form-data" method="post" id="login">
                     <div class='row'>
                         <div class='col s12'>
                         </div>
@@ -50,7 +49,7 @@
                     </div>
                     <div class='row'>
                         <div class='input-field col s12'>
-                            <input class='validate' type='password' name='mot_de_passe' id='password' />
+                            <input class='validate' type='password' name='mot_de_passe' id='mot_de_passe' />
                             <label for='password'>Enter your password</label>
                         </div>
                         <label style='float: right;'>
@@ -60,9 +59,23 @@
                     <br />
                     <center>
                         <div class='row'>
-                            <button type='submit' class='col s12 btn btn-large waves-effect indigo'>Login</button>
+                            <button id="btn_login" type='submit' class='col s12 btn btn-large waves-effect'>Login</button>
                         </div>
                     </center>
+                    <div class="preloader-wrapper big active" id="loading" style="display: none;">
+                        <div class="spinner-layer spinner-blue-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div><div class="gap-patch">
+                                <div class="circle"></div>
+                            </div><div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="resultat">
+                    </div>
                 </form>
             </div>
         </div>
@@ -70,6 +83,37 @@
     <div class="section"></div>
     <div class="section"></div>
 </main>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+<script type="text/javascript">
+    $("#login").on('submit', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: '/PiePHP/user/logAction',
+            data: new FormData(this),
+            contentType: false,
+            cache: false,
+            processData:false,
+            beforeSend: function(){
+                $('#btn_login').attr("disabled","disabled");
+                $('#loading').css("display","block");
+                $('#login').css("opacity",".5");
+            },
+
+            success: function(msg){
+                $('#resultat').html('');
+
+                if(msg == "ok"){
+                    $('#login')[0].reset();
+                    window.location="/PiePHP/user/profil";
+                }else{
+                    $('#resultat').html('<span style="font-size:18px;color:#EA4335">Some problem occurred, please try again.</span>');
+                }
+                $('#login').css("opacity","");
+                $('#loading').css("display","none");
+                $("#btn_login").removeAttr("disabled");
+            }
+        });
+    });
+</script>
+
 

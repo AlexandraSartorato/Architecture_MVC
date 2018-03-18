@@ -12,13 +12,17 @@ class TimelineController extends Controller{
 
     public function watched(){
         $watched=new TimelineModel($this->params);
-        var_dump($_SESSION['id']);
-        $details= $watched->get_info($_SESSION['id']);
-        $film=new FilmModel($this->params);
-        for($i=0; $i<count($details); $i++) {
-            $film_details[] = $film->get_info($details[$i]['id_film']);
-        }
-        $this->render('watched', array('details'=> $details, 'film_details'=> $film_details));
+    if(!empty($_SESSION['id'])) {
+    $details = $watched->get_info($_SESSION['id']);
+    $film = new FilmModel($this->params);
+    $film_details = [];
+    for ($i = 0; $i < count($details); $i++) {
+        $film_details[] = $film->get_info($details[$i]['id_film']);
+    }
+    $this->render('watched', array('details' => $details, 'film_details' => $film_details));
+    }else{
+    $this->render('watched');
+    }
     }
 
     public function add(){

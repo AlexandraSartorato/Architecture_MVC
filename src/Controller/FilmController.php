@@ -26,6 +26,7 @@ class FilmController extends Controller{
     public function addAction(){
         $film= new FilmModel($this->params);
         $film->save();
+        echo"ok";
     }
     public function detail(){
         $film=new FilmModel($this->params);
@@ -49,6 +50,5 @@ class FilmController extends Controller{
         $user = new FilmModel($this->params);
         $user->deleted($_GET['id']);
         $this->render('status');
-        //a faire passer l id ici
     }
 }

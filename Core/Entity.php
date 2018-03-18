@@ -1,7 +1,7 @@
 <?php
 namespace Core;
 use \Core\ORM;
-//extends à ORM obligatoire
+
 class Entity {
 
     public function __construct($params){
@@ -30,13 +30,18 @@ class Entity {
     public function update_info($id){
         $tab=str_replace('Model','', $this->table);
         $tab2=strtolower(ltrim($tab, '\\'));
-       return $this->orm->update($tab2,$id, $this->params);
+       return $this->orm->update($tab2, $id, $this->params);
     }
 
     public function deleted($id){
     $tab=str_replace('Model','', $this->table);
     $tab2=strtolower(ltrim($tab, '\\'));
     $this->orm->delete($tab2,$id);
+}
+    public function insert_user(){
+        $tab=str_replace('Model','', $this->table);
+        $tab2=strtolower(ltrim($tab, '\\'));
+        return $this->orm->create_account($tab2, $this->params);
 }
 
 }

@@ -1,12 +1,11 @@
 <div class="container">
-    <a class="align-right" href="./watched/add"><i class="fas fa-plus-square"></i></a>
+    <a class="align-right" href="/PiePHP/movies/watched/add"><i class="fas fa-plus-square"></i></a>
     <h5>Your Watched list</h5>
+    <?php if(isset($film_details)): ?>
 <table class="striped">
     <thead>
     <tr>
         <th>Title Movie</th>
-        <th>Date</th>
-        <th>Review</th>
     </tr>
     </thead>
     <tbody>
@@ -15,13 +14,9 @@
             <tr><td><?php echo $val['titre'];?></td></tr>
         <?php endforeach; ?>
             <?php endforeach;?>
-    <?php foreach($details as $values):?>
-        <td><?php echo $values['date'];?></td>
-        <td><?php echo $values['avis'];?></td>
-    </tr>
-        <?php endforeach; ?>
-
-
+    <?php else:?>
+        <p>Oops it seems that you need to log in.</p>
+    <?php endif;?>
     </tbody>
 </table>
 </div>
