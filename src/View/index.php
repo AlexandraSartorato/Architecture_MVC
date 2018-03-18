@@ -39,9 +39,9 @@
 </nav>
 <nav>
     <div class="nav-wrapper white">
-        <form>
+        <form method="get" action="/PiePHP/movies/search">
             <div class="input-field">
-                <input id="search" type="search" required>
+                <input id="search" name="titre" type="search" required>
                 <label class="label-icon" for="search"><i class="fas fa-search fa-2x"></i></label>
                 <i class="material-icons">close</i>
             </div>

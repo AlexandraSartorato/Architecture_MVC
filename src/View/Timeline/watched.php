@@ -11,11 +11,13 @@
     <tbody>
     <?php foreach ($film_details as $key):?>
     <?php foreach ($key as $val):?>
-            <tr><td><?php echo $val['titre'];?></td></tr>
-        <?php endforeach; ?>
+            <tr><td><?php echo $val['titre'];?></td>
+            </tr>
+            <?php endforeach; ?>
             <?php endforeach;?>
+    </tbody>
     <?php else:?>
-        <p>Oops it seems that you need to log in.</p>
+        <p>Oops it seems that you need to add movies or log in.</p>
     <?php endif;?>
     </tbody>
 </table>

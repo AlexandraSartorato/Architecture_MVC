@@ -11,7 +11,8 @@ class UserController extends Controller
     public $id;
     public $info;
 
-    public function register(){
+    public function register()
+    {
         $this->render('register');
     }
 
@@ -25,9 +26,7 @@ class UserController extends Controller
         }
     }
 
-    public function destroy()
-    {
-
+    public function destroy(){
         $user = new UserModel($this->params);
         if (isset($_SESSION['id'])) {
         $user->deleted($_SESSION['id']);

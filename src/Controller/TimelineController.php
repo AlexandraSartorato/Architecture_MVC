@@ -35,4 +35,11 @@ class TimelineController extends Controller{
         $watched=new TimelineModel($this->params);
         $watched->save();
     }
+    public function destroy()
+    {
+        $watched = new TimelineModel($this->params);
+        if (isset($_GET['id'])) {
+            $watched->deleted($_GET['id']);
+        }
+    }
 }

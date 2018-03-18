@@ -32,8 +32,5 @@ class GenreController extends Controller{
         $genre= new GenreModel($this->params);
         $genre->deleted($_GET['id']);
         $this->render('status');
-        //a faire passer l id ici
     }
-
-
 }

@@ -26,7 +26,6 @@ class FilmController extends Controller{
     public function addAction(){
         $film= new FilmModel($this->params);
         $film->save();
-        echo"ok";
     }
     public function detail(){
         $film=new FilmModel($this->params);
@@ -40,15 +39,24 @@ class FilmController extends Controller{
     public function update(){
         $film = new FilmModel($this->params);
         $details=$film->get_info($_GET['id']);
-        $this->render('update', array('details'=>$details));
+        $genre= new GenreModel($this->params);
+        $genre_list=$genre->get_all_info();
+        $this->render('update', array('details'=>$details,
+            'genre_list'=>$genre_list));
     }
     public function updateAction(){
         $film= new FilmModel($this->params);
         $film->update_info($_GET['id']);
     }
     public function destroy(){
-        $user = new FilmModel($this->params);
-        $user->deleted($_GET['id']);
+        $film = new FilmModel($this->params);
+        $film->deleted($_GET['id']);
         $this->render('status');
     }
+    public function search_movies(){
+        $film = new FilmModel($this->params);
+        $result=$film->search();
+        $this->render('search', array('films'=>$result));
+    }
+
 }

@@ -11,8 +11,6 @@
                 <option value="<?php echo htmlspecialchars($value['id_genre']);?>"><?php echo htmlspecialchars($value['nom']);?></option>
             <?endforeach;?>
         </select>
-            <label>Date of release</label> <input type="date" class="datepicker" name="date_debut_affiche">
-            <label>End of release</label><input type="date" class="datepicker" name="date_fin_affiche">
             <input type="text" name="duree_min" placeholder="Duration of movie">
             <input type="text" name="annee_prod" placeholder="Year of production">
             <span class="input-group-addon"><i class="fa fa-user-o fa-fw" aria-hidden="true"></i></span>

@@ -13,6 +13,7 @@ Router::connect('/user/logAction', ['controller' =>'UserController', 'action'=>'
 Router::connect('/user/logout', ['controller' =>'UserController', 'action'=>'logout']);
 Router::connect('/user/updateAction', ['controller' =>'UserController', 'action'=>'updateAction']);
 Router::connect('/movies/display', ['controller' =>'FilmController', 'action'=>'display']);
+Router::connect('/movies/search', ['controller' =>'FilmController', 'action'=>'search_movies']);
 Router::connect('/movies/add', ['controller' =>'FilmController', 'action'=>'add']);
 Router::connect('/movies/addAction', ['controller' =>'FilmController', 'action'=>'addAction']);
 Router::connect('/movies/details', ['controller' =>'FilmController', 'action'=>'detail']);
@@ -22,6 +23,7 @@ Router::connect('/movies/delete', ['controller' =>'FilmController', 'action'=>'d
 Router::connect('/movies/watched', ['controller' =>'TimelineController', 'action'=>'watched']);
 Router::connect('/movies/watched/add', ['controller' =>'TimelineController', 'action'=>'add']);
 Router::connect('/movies/watched/addAction', ['controller' =>'TimelineController', 'action'=>'addAction']);
+Router::connect('/movies/watched/delete', ['controller' =>'TimelineController', 'action'=>'destroy']);
 Router::connect('/genre/display', ['controller' =>'GenreController', 'action'=>'display']);
 Router::connect('/genre/add', ['controller' =>'GenreController', 'action'=>'addAction']);
 Router::connect('/genre/update', ['controller' =>'GenreController', 'action'=>'update']);

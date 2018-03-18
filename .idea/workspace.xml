@@ -2,33 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c267e288-5d1d-42b3-a4d4-6b1e01d9ae60" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webroot/assets/logo.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/Film/search.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/Controller.php" afterPath="$PROJECT_DIR$/Core/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/Entity.php" afterPath="$PROJECT_DIR$/Core/Entity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/ORM.php" afterPath="$PROJECT_DIR$/Core/ORM.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/Request.php" afterPath="$PROJECT_DIR$/Core/Request.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Core/Router.php" afterPath="$PROJECT_DIR$/Core/Router.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes.php" afterPath="$PROJECT_DIR$/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/FilmController.php" afterPath="$PROJECT_DIR$/src/Controller/FilmController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/GenreController.php" afterPath="$PROJECT_DIR$/src/Controller/GenreController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/TimelineController.php" afterPath="$PROJECT_DIR$/src/Controller/TimelineController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/UserModel.php" afterPath="$PROJECT_DIR$/src/Model/UserModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/App/index.php" afterPath="$PROJECT_DIR$/src/View/App/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Error/404.php" afterPath="$PROJECT_DIR$/src/View/Error/404.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/FilmModel.php" afterPath="$PROJECT_DIR$/src/Model/FilmModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Film/add.php" afterPath="$PROJECT_DIR$/src/View/Film/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Film/details.php" afterPath="$PROJECT_DIR$/src/View/Film/details.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Film/display.php" afterPath="$PROJECT_DIR$/src/View/Film/display.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Film/update.php" afterPath="$PROJECT_DIR$/src/View/Film/update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Genre/update.php" afterPath="$PROJECT_DIR$/src/View/Genre/update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Timeline/add.php" afterPath="$PROJECT_DIR$/src/View/Timeline/add.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/Timeline/watched.php" afterPath="$PROJECT_DIR$/src/View/Timeline/watched.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/User/index.php" afterPath="$PROJECT_DIR$/src/View/User/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/User/login.php" afterPath="$PROJECT_DIR$/src/View/User/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/User/profil.php" afterPath="$PROJECT_DIR$/src/View/User/profil.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/User/register.php" afterPath="$PROJECT_DIR$/src/View/User/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/User/status.php" afterPath="$PROJECT_DIR$/src/View/User/status.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/User/update.php" afterPath="$PROJECT_DIR$/src/View/User/update.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/index.php" afterPath="$PROJECT_DIR$/src/View/index.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -44,22 +28,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="display.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Film/display.php">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="details.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Film/details.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="-220">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding>
+                <element signature="e#29#50#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,58 +43,50 @@
       <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/Film/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="450">
+              <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="display.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Genre/display.php">
+      <file leaf-file-name="FilmController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/FilmController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            <state relative-caret-position="450">
+              <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+              <folding>
+                <element signature="e#29#50#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ErrorController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ErrorController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Genre/update.php">
+      <file leaf-file-name="AppController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/View/Timeline/add.php">
+      <file leaf-file-name="Router.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Router.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="watched.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Timeline/watched.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Film/add.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+            <state relative-caret-position="315">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -127,34 +95,57 @@
       <file leaf-file-name="ORM.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Core/ORM.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="22">
+              <caret line="48" column="36" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
               <folding>
                 <element signature="e#22#41#0#PHP" expanded="true" />
-                <marker date="1521392691000" expanded="true" signature="628:668" ph="INSERT INTO ${$table}... " />
-                <marker date="1521392691000" expanded="true" signature="628:678" ph="INSERT INTO ${$table}... " />
-                <marker date="1521392691000" expanded="true" signature="977:996" ph="SELECT * FRO... ${$table}" />
-                <marker date="1521392691000" expanded="true" signature="977:1001" ph="SELECT * FRO... ${$table}" />
-                <marker date="1521392691000" expanded="true" signature="977:1012" ph="SELECT * FRO... ${$table}" />
-                <marker date="1521392691000" expanded="true" signature="977:1013" ph="SELECT * FRO... ${$table}" />
-                <marker date="1521392691000" expanded="true" signature="977:1015" ph="SELECT * FRO... $table" />
-                <marker date="1521392691000" expanded="true" signature="985:996" ph="INSERT INTO ${$table}... " />
-                <marker date="1521392691000" expanded="true" signature="1327:1341" ph="SELECT * FRO... ${$table}" />
-                <marker date="1521392691000" expanded="true" signature="1327:1347" ph="SELECT * FRO... ${$table}" />
-                <marker date="1521392691000" expanded="true" signature="1885:1949" ph="UPDATE ${$ta... " />
-                <marker date="1521392691000" expanded="true" signature="2272:2305" ph="DELETE FROM " />
-                <marker date="1521392691000" expanded="true" signature="2278:2305" ph="SELECT * FRO... ${$table}" />
-                <marker date="1521392691000" expanded="true" signature="3029:3078" ph="INSERT INTO users... " />
+                <marker date="1521395525000" expanded="true" signature="628:668" ph="INSERT INTO ${$table}... " />
+                <marker date="1521395525000" expanded="true" signature="628:678" ph="INSERT INTO ${$table}... " />
+                <marker date="1521395525000" expanded="true" signature="977:996" ph="SELECT * FRO... ${$table}" />
+                <marker date="1521395525000" expanded="true" signature="977:1001" ph="SELECT * FRO... ${$table}" />
+                <marker date="1521395525000" expanded="true" signature="977:1012" ph="SELECT * FRO... ${$table}" />
+                <marker date="1521395525000" expanded="true" signature="977:1013" ph="SELECT * FRO... ${$table}" />
+                <marker date="1521395525000" expanded="true" signature="977:1015" ph="SELECT * FRO... $table" />
+                <marker date="1521395525000" expanded="true" signature="985:996" ph="INSERT INTO ${$table}... " />
+                <marker date="1521395525000" expanded="true" signature="1327:1341" ph="SELECT * FRO... ${$table}" />
+                <marker date="1521395525000" expanded="true" signature="1327:1347" ph="SELECT * FRO... ${$table}" />
+                <marker date="1521395525000" expanded="true" signature="1885:1949" ph="UPDATE ${$ta... " />
+                <marker date="1521395525000" expanded="true" signature="2272:2305" ph="DELETE FROM " />
+                <marker date="1521395525000" expanded="true" signature="2272:2308" ph="DELETE FROM " />
+                <marker date="1521395525000" expanded="true" signature="2278:2305" ph="SELECT * FRO... ${$table}" />
+                <marker date="1521395525000" expanded="true" signature="3029:3078" ph="INSERT INTO users... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="404.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Error/404.php">
+      <file leaf-file-name="Database.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Core/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="144" lean-forward="false" selection-start-line="49" selection-start-column="144" selection-end-line="49" selection-end-column="144" />
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimelineController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/TimelineController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#29#50#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenreController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/GenreController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -188,23 +179,19 @@
         <option value="$PROJECT_DIR$/jbjbj.http" />
         <option value="$PROJECT_DIR$/Core/TemplateEngine.php" />
         <option value="$PROJECT_DIR$/src/Controller/AppController.php" />
-        <option value="$PROJECT_DIR$/src/Model/FilmModel.php" />
         <option value="$PROJECT_DIR$/src/Controller/ErrorController.php" />
         <option value="$PROJECT_DIR$/src/View/Film/update_movie.php" />
         <option value="$PROJECT_DIR$/src/Model/TimelineModel.php" />
         <option value="$PROJECT_DIR$/src/Model/GenreModel.php" />
         <option value="$PROJECT_DIR$/webroot/css/style.css" />
         <option value="$PROJECT_DIR$/src/View/Genre/display.php" />
-        <option value="$PROJECT_DIR$/src/Controller/GenreController.php" />
         <option value="$PROJECT_DIR$/Core/Database.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Core/Core.php" />
         <option value="$PROJECT_DIR$/Core/Request.php" />
         <option value="$PROJECT_DIR$/src/View/Error/404.php" />
         <option value="$PROJECT_DIR$/src/View/User/status.php" />
-        <option value="$PROJECT_DIR$/src/Controller/TimelineController.php" />
         <option value="$PROJECT_DIR$/src/View/User/profil.php" />
-        <option value="$PROJECT_DIR$/src/Controller/FilmController.php" />
         <option value="$PROJECT_DIR$/src/View/User/update.php" />
         <option value="$PROJECT_DIR$/src/View/User/login.php" />
         <option value="$PROJECT_DIR$/src/View/Film/details.php" />
@@ -213,18 +200,23 @@
         <option value="$PROJECT_DIR$/Core/Entity.php" />
         <option value="$PROJECT_DIR$/Core/Router.php" />
         <option value="$PROJECT_DIR$/src/View/User/register.php" />
-        <option value="$PROJECT_DIR$/routes.php" />
-        <option value="$PROJECT_DIR$/src/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/src/Model/UserModel.php" />
         <option value="$PROJECT_DIR$/src/View/App/index.php" />
+        <option value="$PROJECT_DIR$/src/View/Genre/update.php" />
+        <option value="$PROJECT_DIR$/src/View/Film/display.php" />
+        <option value="$PROJECT_DIR$/src/View/Timeline/add.php" />
+        <option value="$PROJECT_DIR$/src/Controller/TimelineController.php" />
+        <option value="$PROJECT_DIR$/src/View/Timeline/watched.php" />
+        <option value="$PROJECT_DIR$/Core/ORM.php" />
+        <option value="$PROJECT_DIR$/src/Model/FilmModel.php" />
+        <option value="$PROJECT_DIR$/src/View/index.php" />
+        <option value="$PROJECT_DIR$/routes.php" />
+        <option value="$PROJECT_DIR$/src/View/Film/search.php" />
+        <option value="$PROJECT_DIR$/src/Controller/FilmController.php" />
         <option value="$PROJECT_DIR$/src/View/Film/add.php" />
         <option value="$PROJECT_DIR$/src/View/Film/update.php" />
-        <option value="$PROJECT_DIR$/src/View/Genre/update.php" />
-        <option value="$PROJECT_DIR$/src/View/index.php" />
-        <option value="$PROJECT_DIR$/Core/ORM.php" />
-        <option value="$PROJECT_DIR$/src/View/Film/display.php" />
-        <option value="$PROJECT_DIR$/src/View/Timeline/watched.php" />
-        <option value="$PROJECT_DIR$/src/View/Timeline/add.php" />
+        <option value="$PROJECT_DIR$/src/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/GenreController.php" />
       </list>
     </option>
   </component>
@@ -603,12 +595,12 @@
       <updated>1519036681072</updated>
       <workItem from="1519036682261" duration="273000" />
       <workItem from="1520241604358" duration="89971000" />
-      <workItem from="1520881458646" duration="60905000" />
+      <workItem from="1520881458646" duration="65687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151149000" />
+    <option name="totallyTimeSpent" value="155931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -667,14 +659,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/User/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -846,50 +830,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Core/Entity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ErrorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/GenreController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="82" lean-forward="false" selection-start-line="4" selection-start-column="82" selection-end-line="4" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -910,89 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/FilmController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="35" column="57" lean-forward="false" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
-          <folding>
-            <element signature="e#29#50#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/TimelineController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="e#29#50#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/FilmModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/GenreModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/TimelineModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/UserModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#42#0#PHP" expanded="true" />
-            <marker date="1521392130000" expanded="true" signature="262:294" ph="SELECT * FRO... ${$tab}" />
-            <marker date="1521392130000" expanded="true" signature="262:295" ph="SELECT * FRO... users" />
-            <marker date="1521392130000" expanded="true" signature="262:296" ph="SELECT * FRO... users" />
-            <marker date="1521392130000" expanded="true" signature="262:301" ph="SELECT * FRO... ${$tab}" />
-            <marker date="1521392130000" expanded="true" signature="262:302" ph="SELECT * FRO... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/App/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
@@ -1005,22 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="49" column="144" lean-forward="false" selection-start-line="49" selection-start-column="144" selection-end-line="49" selection-end-column="144" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Film/details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Film/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1041,58 +886,212 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Film/add.php">
+    <entry file="file://$PROJECT_DIR$/src/View/Timeline/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/ORM.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#41#0#PHP" expanded="true" />
-            <marker date="1521392691000" expanded="true" signature="628:668" ph="INSERT INTO ${$table}... " />
-            <marker date="1521392691000" expanded="true" signature="628:678" ph="INSERT INTO ${$table}... " />
-            <marker date="1521392691000" expanded="true" signature="977:996" ph="SELECT * FRO... ${$table}" />
-            <marker date="1521392691000" expanded="true" signature="977:1001" ph="SELECT * FRO... ${$table}" />
-            <marker date="1521392691000" expanded="true" signature="977:1012" ph="SELECT * FRO... ${$table}" />
-            <marker date="1521392691000" expanded="true" signature="977:1013" ph="SELECT * FRO... ${$table}" />
-            <marker date="1521392691000" expanded="true" signature="977:1015" ph="SELECT * FRO... $table" />
-            <marker date="1521392691000" expanded="true" signature="985:996" ph="INSERT INTO ${$table}... " />
-            <marker date="1521392691000" expanded="true" signature="1327:1341" ph="SELECT * FRO... ${$table}" />
-            <marker date="1521392691000" expanded="true" signature="1327:1347" ph="SELECT * FRO... ${$table}" />
-            <marker date="1521392691000" expanded="true" signature="1885:1949" ph="UPDATE ${$ta... " />
-            <marker date="1521392691000" expanded="true" signature="2272:2305" ph="DELETE FROM " />
-            <marker date="1521392691000" expanded="true" signature="2278:2305" ph="SELECT * FRO... ${$table}" />
-            <marker date="1521392691000" expanded="true" signature="3029:3078" ph="INSERT INTO users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Film/display.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        <state relative-caret-position="330">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Timeline/watched.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="330">
+          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Timeline/add.php">
+    <entry file="file://$PROJECT_DIR$/src/Model/GenreModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/UserModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="e#23#42#0#PHP" expanded="true" />
+            <marker date="1521392130000" expanded="true" signature="262:294" ph="SELECT * FRO... ${$tab}" />
+            <marker date="1521392130000" expanded="true" signature="262:295" ph="SELECT * FRO... users" />
+            <marker date="1521392130000" expanded="true" signature="262:296" ph="SELECT * FRO... users" />
+            <marker date="1521392130000" expanded="true" signature="262:301" ph="SELECT * FRO... ${$tab}" />
+            <marker date="1521392130000" expanded="true" signature="262:302" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/FilmModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding>
+            <element signature="e#23#42#0#PHP" expanded="true" />
+            <marker date="1521396127000" expanded="true" signature="264:295" ph="SELECT * FRO... films" />
+            <marker date="1521396127000" expanded="true" signature="264:311" ph="SELECT * FRO... films" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="95" lean-forward="true" selection-start-line="23" selection-start-column="95" selection-end-line="23" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/TimelineModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Film/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Film/display.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Film/details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Film/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Film/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ErrorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-220">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#29#50#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/TimelineController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#29#50#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/GenreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FilmController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+          <folding>
+            <element signature="e#29#50#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/ORM.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="48" column="36" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+          <folding>
+            <element signature="e#22#41#0#PHP" expanded="true" />
+            <marker date="1521395525000" expanded="true" signature="628:668" ph="INSERT INTO ${$table}... " />
+            <marker date="1521395525000" expanded="true" signature="628:678" ph="INSERT INTO ${$table}... " />
+            <marker date="1521395525000" expanded="true" signature="977:996" ph="SELECT * FRO... ${$table}" />
+            <marker date="1521395525000" expanded="true" signature="977:1001" ph="SELECT * FRO... ${$table}" />
+            <marker date="1521395525000" expanded="true" signature="977:1012" ph="SELECT * FRO... ${$table}" />
+            <marker date="1521395525000" expanded="true" signature="977:1013" ph="SELECT * FRO... ${$table}" />
+            <marker date="1521395525000" expanded="true" signature="977:1015" ph="SELECT * FRO... $table" />
+            <marker date="1521395525000" expanded="true" signature="985:996" ph="INSERT INTO ${$table}... " />
+            <marker date="1521395525000" expanded="true" signature="1327:1341" ph="SELECT * FRO... ${$table}" />
+            <marker date="1521395525000" expanded="true" signature="1327:1347" ph="SELECT * FRO... ${$table}" />
+            <marker date="1521395525000" expanded="true" signature="1885:1949" ph="UPDATE ${$ta... " />
+            <marker date="1521395525000" expanded="true" signature="2272:2305" ph="DELETE FROM " />
+            <marker date="1521395525000" expanded="true" signature="2272:2308" ph="DELETE FROM " />
+            <marker date="1521395525000" expanded="true" signature="2278:2305" ph="SELECT * FRO... ${$table}" />
+            <marker date="1521395525000" expanded="true" signature="3029:3078" ph="INSERT INTO users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>

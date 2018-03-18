@@ -5,6 +5,13 @@
     <h2 class="form-signin-heading">Update the database</h2>
     <div class="input-group">
         <input type="text" id="title"  placeholder="<?php echo htmlspecialchars($details[0]['titre']); ?>" name ="titre">
+        <select name="id_genre">
+            <label for="textarea1">Choose your genre</label>
+        <option value="id_genre">Choose your genre</option>
+        <?php foreach ($genre_list as $value) :?>
+            <option value="<?php echo htmlspecialchars($value['id_genre']);?>"><?php echo htmlspecialchars($value['nom']);?></option>
+        <?endforeach;?>
+        </select>
         <div class="input-field col s12">
             <textarea id="textarea1" class="materialize-textarea" name="resum"></textarea>
             <label for="textarea1">Plot of the movie</label>
@@ -20,3 +27,8 @@
 </div>
 </div>
 </form>
+<script>
+    $(document).ready(function() {
+        $('select').material_select();
+    });
+</script>
