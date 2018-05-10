@@ -4,6 +4,8 @@ use \Core\Database;
 use \Core\Entity;
 use PDO;
 
-class GenreModel extends Entity{
+class GenreModel extends Entity
+{
+
 
 }

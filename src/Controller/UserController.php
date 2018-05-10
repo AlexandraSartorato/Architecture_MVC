@@ -16,7 +16,8 @@ class UserController extends Controller
         $this->render('register');
     }
 
-    public function profil(){
+    public function profil()
+    {
         $user = new UserModel($this->params);
         if(!empty($_SESSION['id'])) {
             $info = $user->get_info($_SESSION['id']);
@@ -26,14 +27,17 @@ class UserController extends Controller
         }
     }
 
-    public function destroy(){
+    public function destroy()
+    {
         $user = new UserModel($this->params);
         if (isset($_SESSION['id'])) {
-        $user->deleted($_SESSION['id']);
-    }
+            $user->deleted($_SESSION['id']);
+        }
         $this->render('status');
     }
-    public function registerAction(){
+
+    public function registerAction()
+    {
         $user = new UserModel($this->params);
         $this->id=$user->insert_user();
         $_SESSION["id"]=$this->id;
@@ -42,7 +46,8 @@ class UserController extends Controller
         }
     }
 
-    public function update(){
+    public function update()
+    {
         $user = new UserModel($this->params);
         if(!empty($_SESSION['id'])) {
             $info = $user->get_info($_SESSION['id']);
@@ -53,7 +58,8 @@ class UserController extends Controller
         }
     }
 
-    public function updateAction(){
+    public function updateAction()
+    {
         $user = new UserModel($this->params);
         if(isset($_SESSION['id'])) {
             $user->update_info($_SESSION['id']);
@@ -61,14 +67,17 @@ class UserController extends Controller
         }
     }
 
-    public function login(){
+    public function login()
+    {
         $this->render('login');
     }
-    public function logAction(){
+
+    public function logAction()
+    {
         $user=new UserModel($this->params);
         $id=$user->log();
         if($id==false){
-           // $this->render('index');
+            // $this->render('index');
         }else{
             $_SESSION['id']=$id;
             echo "ok";
@@ -76,7 +85,8 @@ class UserController extends Controller
         }
     }
 
-    public function logout(){
+    public function logout()
+    {
         session_destroy();
         $this->render('index');
         exit;

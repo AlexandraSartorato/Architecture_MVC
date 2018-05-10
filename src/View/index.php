@@ -15,40 +15,40 @@
     <title>Pie PHP</title>
 </head>
 <body>
-<nav>
-    <div class="nav-wrapper red lighten-1">
-        <a href="/PiePHP/" class="brand-logo">Mycinem@</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="/PiePHP/movies/display">Movies</a></li>
-            <li><a href="/PiePHP/movies/watched">Watched list</a></li>
-            <li><a class="waves-effect waves-light btn" href="/PiePHP/user/login">Login</a></li>
-            <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Menu</a>
-            <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="/PiePHP/user/profil">User profil</a></li>
-                <li><a href="/PiePHP/movies/watched"><i class="fas fa-history"></i>Watched list</a></li>
-                <li class="divider"></li>
-                <li><a href="/PiePHP/user/logout"><i class= "fas fa-sign-out-alt"></i>Log out</a></li>
+    <nav>
+        <div class="nav-wrapper red lighten-1">
+            <a href="/PiePHP/" class="brand-logo">Mycinem@</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/PiePHP/movies/display">Movies</a></li>
+                <li><a href="/PiePHP/movies/watched">Watched list</a></li>
+                <li><a class="waves-effect waves-light btn" href="/PiePHP/user/login">Login</a></li>
+                <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Menu</a>
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="/PiePHP/user/profil">User profil</a></li>
+                    <li><a href="/PiePHP/movies/watched"><i class="fas fa-history"></i>Watched list</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/PiePHP/user/logout"><i class= "fas fa-sign-out-alt"></i>Log out</a></li>
+                </ul>
             </ul>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-            <li><a href="/PiePHP/movies/display">Movies</a></li>
-            <li><a href="/PiePHP/user/login">History</a></li>
-        </ul>
-    </div>
-</nav>
-<nav>
-    <div class="nav-wrapper white">
-        <form method="get" action="/PiePHP/movies/search">
-            <div class="input-field">
-                <input id="search" name="titre" type="search" required>
-                <label class="label-icon" for="search"><i class="fas fa-search fa-2x"></i></label>
-                <i class="material-icons">close</i>
-            </div>
-        </form>
-    </div>
-</nav>
-<?= $view ?>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="/PiePHP/movies/display">Movies</a></li>
+                <li><a href="/PiePHP/user/login">History</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav>
+        <div class="nav-wrapper white">
+            <form method="get" action="/PiePHP/movies/search">
+                <div class="input-field">
+                    <input id="search" name="titre" type="search" required>
+                    <label class="label-icon" for="search"><i class="fas fa-search fa-2x"></i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <?= $view ?>
 </body>
 <footer class="page-footer red lighten-1">
     <div class="container">

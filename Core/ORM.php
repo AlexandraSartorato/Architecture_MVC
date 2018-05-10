@@ -5,10 +5,11 @@ use \Core\Database;
 use PDO;
 
 class ORM{
-   public function __construct(){
+    public function __construct()
+    {
         try
         {
-           $this->bdd = new PDO('mysql:host=localhost:8889;dbname=epitech_tp;charset=utf8', 'root', 'root');
+            $this->bdd = new PDO('mysql:host=localhost:8889;dbname=epitech_tp;charset=utf8', 'root', 'root');
         }
         catch (Exception $e)
         {
@@ -16,65 +17,73 @@ class ORM{
         }
     }
 
-    public function create ($table, $fields) {
+    public function create ($table, $fields)
+    {
         try {
-        $all_keys=array_keys ($fields);
-        $request= implode("` , `", $all_keys);
-        $value_list = array_values ($fields);
-        $values = implode("' , '", $value_list);
-
-        $reponse = $this->bdd->prepare("INSERT INTO $table (`$request`) VALUES ('$values')");
-        $reponse->execute();
+            $all_keys = array_keys ($fields);
+            $request = implode("` , `", $all_keys);
+            $value_list = array_values ($fields);
+            $values = implode("' , '", $value_list);
+            $reponse = $this->bdd->prepare("INSERT INTO $table (`$request`) VALUES ('$values')");
+            $reponse->execute();
             return $this->bdd->lastInsertId();
-    }   catch (Exception $e) {
-        die('Erreur : ' . $e->getMessage());
+        }   catch (Exception $e) {
+            die('Erreur : ' . $e->getMessage());
+        }
     }
-    }
-        public function read ($table, $id) {
+
+    public function read ($table, $id)
+    {
         try{
-            $tab=$table.'s';
-            $reponse = $this->bdd->prepare("SELECT * FROM $tab WHERE id_$table=$id");
+            $tab = rtrim($table, "s");
+            $reponse = $this->bdd->prepare("SELECT * FROM $table WHERE id_$tab = $id");
             $reponse->execute();
             return $reponse->fetchAll(PDO::FETCH_ASSOC);
         } catch (Exception $e) {
-                die('Erreur : ' . $e->getMessage());
-            }
+            die('Erreur : ' . $e->getMessage());
         }
-
-        public function read_all($table){
-            try{
-                $reponse = $this->bdd->prepare("SELECT * FROM $table");
-                $reponse->execute();
-                return $reponse->fetchAll(PDO::FETCH_ASSOC);
-            } catch (Exception $e) {
-                die('Erreur : ' . $e->getMessage());
-            }
-        }
-
-        public function update ($table, $id, $fields) {
-            try {
-                $all_keys=array_keys ($fields);
-                $value_list = array_values ($fields);
-                $tab = $table.'s';
-                for($i=0; $i < count($all_keys); $i ++) {
-                    $reponse = $this->bdd->prepare("UPDATE $tab SET $all_keys[$i]='$value_list[$i]' WHERE id_$table=$id");
-                    $reponse->execute();
-                }
-            }   catch (Exception $e) {
-                die('Erreur : ' . $e->getMessage());
-            }
-    }
-        public function delete ($table, $id) {
-            try{
-                $tab=$table.'s';
-                $reponse = $this->bdd->prepare("DELETE FROM $tab WHERE id_$table=$id");
-                $reponse->execute();
-            } catch (Exception $e) {
-                die('Erreur : ' . $e->getMessage());
-            }
     }
 
-    public function create_account ($table, $fields) {
+    public function read_all($table)
+    {
+        try{
+            $reponse = $this->bdd->prepare("SELECT * FROM $table");
+            $reponse->execute();
+            return $reponse->fetchAll(PDO::FETCH_ASSOC);
+        } catch (Exception $e) {
+            die('Erreur : ' . $e->getMessage());
+        }
+    }
+
+    public function update ($table, $id, $fields)
+    {
+        try {
+            $tab = rtrim($table, "s");
+            $all_keys = array_keys ($fields);
+            $value_list = array_values ($fields);
+            for($i=0; $i < count($all_keys); $i ++) {
+                $reponse = $this->bdd->prepare("UPDATE $table SET $all_keys[$i]='$value_list[$i]' WHERE id_$tab = $id");
+                var_dump($reponse);
+                $reponse->execute();
+            }
+        }   catch (Exception $e) {
+            die('Erreur : ' . $e->getMessage());
+        }
+    }
+
+    public function delete ($table, $id)
+    {
+        try{
+            $tab = rtrim($table, "s");
+            $reponse = $this->bdd->prepare("DELETE FROM $table WHERE id_$tab = $id");
+            $reponse->execute();
+        } catch (Exception $e) {
+            die('Erreur : ' . $e->getMessage());
+        }
+    }
+
+    public function create_account ($table, $fields)
+    {
         try {
             $all_keys = array_keys ($fields);
             $request = implode("` , `", $all_keys);
@@ -93,11 +102,11 @@ class ORM{
         }
     }
 
-        public function find ($table, $params = array( 'WHERE' => '1',
+    public function find ($table, $params = array( 'WHERE' => '1',
     'ORDER BY' => 'id ASC',
     'LIMIT' => ''
 )) {
 
 
-    }
+}
 }

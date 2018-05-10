@@ -1,13 +1,13 @@
 <div class="container">
-<div class="row">
-    <div class="col s5">
-<table class="striped">
-                    <thead>
-                        <th>Genre</th>
-                        <th>Rename genre</th>
-                        <th>Delete</th>
-                    </thead>
-                    <tbody>
+    <div class="row">
+        <div class="col s5">
+            <table class="striped">
+                <thead>
+                    <th>Genre</th>
+                    <th>Rename genre</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody>
                     <?php $result = array_filter($genres);?>
                     <? foreach ($result as $item=>$value):?>
                     <tr>
@@ -16,10 +16,10 @@
                         <td></i><a href="./update?id=<?php echo htmlspecialchars($value['id_genre']);?>"><i class="fas fa-wrench"></i></a></td>
                         <td></i><a href="./delete?id=<?php echo htmlspecialchars($value['id_genre']);?>"><i class="fas fa-minus-square"></i></a></td>
                     </tr>
-                    <?php endforeach;?>
-                    </tbody>
-</table>
-</div>
+                <?php endforeach;?>
+            </tbody>
+        </table>
+    </div>
     <h5 class="indigo-text">Add a new genre</h5>
     <form class="col s6" method="post" action="./add">
         <div class='row'>

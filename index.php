@@ -7,4 +7,3 @@ $a = $app->run();
 $controller = 'Controller\\'.$a['controller'];
 $c= new $controller;
 $c-> {$a['action']}();
-?>

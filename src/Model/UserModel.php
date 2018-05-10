@@ -4,9 +4,11 @@ use \Core\Database;
 use \Core\Entity;
 use PDO;
 
-class UserModel extends Entity {
+class UserModel extends Entity
+{
 
-    public function log(){
+    public function log()
+    {
         $values= $this->params;
         $email=$values['email'];
         try{
@@ -24,5 +26,5 @@ class UserModel extends Entity {
             die('Erreur : ' . $e->getMessage());
         }
     }
-
+    
 }

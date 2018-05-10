@@ -4,9 +4,11 @@ use \Core\Database;
 use \Core\Entity;
 use PDO;
 
-class FilmModel extends Entity{
+class FilmModel extends Entity
+{
 
-    public function search(){
+    public function search()
+    {
         $values= $this->params;
         $titre=$values['titre'];
         try{
